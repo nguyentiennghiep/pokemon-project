@@ -1,9 +1,6 @@
-import { combineReducers } from "redux";
-
-const test = () => {
-    return {test:"test"}
-}
+import { combineReducers } from 'redux';
+import { pokemonsReducer } from './pokemons';
 
 export default combineReducers({
-    test:test
+   pokemons:pokemonsReducer
 })
