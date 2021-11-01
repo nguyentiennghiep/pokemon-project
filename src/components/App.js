@@ -1,9 +1,9 @@
 import React from "react";
-
+import TestRedux from "./TestRedux";
 class App extends React.Component{
     render(){
         return <div>
-            <h1>Start something new</h1>
+            <TestRedux/>
         </div>
     }
 }
