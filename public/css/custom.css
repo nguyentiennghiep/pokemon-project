@@ -1,0 +1,93 @@
+/* color for pokemon's type */
+
+/* grass */
+.ui.grass.label{
+    background-color: #7AC74C;
+    color: #fff;
+}
+
+/* normal */
+.ui.normal.label{
+    background-color: #91998c;
+    color: #fff;
+}
+/* fire */
+.ui.fire.label{
+    background-color: #EE8130;
+    color: #fff;
+}
+/* water */
+.ui.water.label{
+    background-color: #6390F0;
+    color: #fff;
+}
+/* electric  */
+.ui.electric.label{
+    background-color: #F7D02C;
+    color: #fff;
+}
+/* ice */
+.ui.ice.label{
+    background-color: #96D9D6;
+    color: #fff;
+}
+/* fighting */
+.ui.fighting.label{
+    background-color: #C22E28;
+    color: #fff;
+}
+/* poison */
+.ui.poison.label{
+    background-color: #A33EA1;
+    color: #fff;
+}
+/* ground */
+.ui.ground.label{
+    background-color: #E2BF65;
+    color: #fff;
+}
+/* flying */
+.ui.flying.label{
+    background-color: #A98FF3;
+    color: #fff;
+}
+/* psychic */
+.ui.psychic.label{
+    background-color: #F95587;
+    color: #fff;
+}
+/* bug */
+.ui.bug.label{
+    background-color: #A6B91A;
+    color: #fff;
+}
+/* rock */
+.ui.rock.label{
+    background-color: #B6A136;
+    color: #fff;
+}
+/* ghost */
+.ui.ghost.label{
+    background-color: #735797;
+    color: #fff;
+}
+/* dragon */
+.ui.dragon.label{
+    background-color: #6F35FC;
+    color: #fff;
+}
+/* dark */
+.ui.dark.label{
+    background-color: #705746;
+    color: #fff;
+}
+/* steel */
+.ui.steel.label{
+    background-color: #B7B7CE;
+    color: #fff;
+}
+/* fairy */
+.ui.fairy.label{
+    background-color: #D685AD;
+    color: #fff;
+}
