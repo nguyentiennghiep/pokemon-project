@@ -1,30 +1,45 @@
 import React from 'react';
+import TypeLabel from './TypeLabel'
 
 class Pokemon extends React.Component {
+    // constructor(props){
+    //     super(props);
+    // }
+
+    renderTypes(types){
+        if (types.length === 2) {
+            return (
+                <div className="extra">
+                    <TypeLabel typeInfo={types[0]} />
+                    <TypeLabel typeInfo={types[1]}/>
+                </div>
+            )
+        }else{
+            return (
+                <div className="extra">
+                    <TypeLabel typeInfo={types[0]}/>
+                </div>
+            )
+        }
+    }
+
     render() {
-        return <div className="card">
-            <div className="image">
-                <img src="../../public/imgs/molly.png" alt="img" />
-            </div>
-            <div className="content">
-                <div className="header">Matt Giampietro</div>
-                <div className="meta">
-                    <a>Friends</a>
+        const { pokemon } = this.props;
+        if (Object.keys(pokemon).length !== 0) {
+            return <div className="card">
+                <div className="image">
+                    <img src={pokemon.sprites.other['official-artwork'].front_default} alt="img" />
                 </div>
-                <div className="description">
-                    Matthew is an interior designer living in New York.
+                <div className="content">
+                    <div className="header">{pokemon.name}</div>
+                    {/* <div className="description">
+                </div> */}
                 </div>
+                {this.renderTypes(pokemon.types)}
             </div>
-            <div className="extra content">
-                <span className="right floated">
-                    Joined in 2013
-                </span>
-                <span>
-                    <i className="user icon"></i>
-                    75 Friends
-                </span>
-            </div>
-        </div>
+        } else {
+            return <div>Loading</div>
+        }
     }
 }
 
